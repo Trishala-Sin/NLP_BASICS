@@ -1,0 +1,45 @@
+
+
+
+*********************** NLP - Regular Expressions ******************************************
+
+
+## Regular Expressions 
+
+import re 
+
+re.search ('search.string','Main.string')
+# print output of re.search()
+
+match = re.search('honey','honey ! I shrunk the kids ')
+print(match.group()) 
+
+output : 'honey'
+
+## Fuction to find pattern 
+
+def find_pattern('pattern','text'):
+	if re.search('pattern','text'):
+		return re.search('pattern','text')
+	else:
+		return 'Not Found !'
+
+**************extract the start poision using result.start() *************************
+
+result =  re.search('pattern','text')
+
+stating_position = result.start() 
+
+
+**************extract the start poision using result.end() *************************
+
+result =  re.search('pattern','text')
+
+end_position = result.end() 
+
+**************************************************************************************
+
+Regular expressions "*,?,+,{n},{m,n}" 
+
+The pattern ‘ +’, i.e. a space followed by a plus sign will match one or more spaces.
+
